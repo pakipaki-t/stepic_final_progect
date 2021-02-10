@@ -4,6 +4,7 @@ Created on Mon Jan 25 11:38:32 2021
 
 @author: Pavel
 """
+
 from pages.login_page import LoginPage
 from pages.main_page import MainPage
 
@@ -39,4 +40,6 @@ def test_should_be_login_url(browser):
     page.open()
     page.should_be_login_url()
     
-    
+
+
+ 
