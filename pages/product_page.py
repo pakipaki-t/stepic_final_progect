@@ -27,4 +27,14 @@ class ProductPage(BasePage):
         assert product_price == added_product_price ,\
         "Prices of added product and product are unequal"
         
+    def should_not_be_success_message(self):
+        assert not self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGE),\
+        "Success message is presented"
+        
+    def message_disappeared_after_adding_product_to_basket(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message should disappear, but remains on page"
+        
+        
+        
    
