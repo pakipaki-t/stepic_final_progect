@@ -30,3 +30,8 @@ class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+    WATCH_CART_BUTTON = (By.XPATH, "//a[@class='btn btn-default']")
+    
+class BasketPageLocators:
+    IS_CART_EMPTY = (By.CSS_SELECTOR, "#content_inner p")
+    CART_ITEMS = (By.CSS_SELECTOR, "#content_inner .basket-items")

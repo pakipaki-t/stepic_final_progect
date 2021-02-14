@@ -5,8 +5,8 @@ Created on Mon Jan 25 11:38:32 2021
 @author: Pavel
 """
 
-from .login_page import LoginPage
-from .main_page import MainPage
+from .pages.login_page import LoginPage
+from .pages.main_page import MainPage
 
 def test_guest_can_go_to_login_page(browser):
     link = "http://selenium1py.pythonanywhere.com"

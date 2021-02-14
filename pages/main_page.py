@@ -7,6 +7,7 @@ Created on Mon Jan 25 12:24:39 2021
 
 
 from .base_page import BasePage
+from .pages.cart_page import BasketPage
 from .locators import MainPageLocators
 
 class MainPage(BasePage):
